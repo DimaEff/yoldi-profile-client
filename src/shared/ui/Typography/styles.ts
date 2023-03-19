@@ -19,8 +19,21 @@ export const subtitleStyles: CSSProperties = {
     lineHeight: TITLE_LINE_HEIGHT,
 };
 
-export const getParagraphStyles: (mini: boolean) => CSSProperties = (mini) => ({
+export const getParagraphStyles: (
+    color: string,
+    mini: boolean,
+    noMargin: boolean
+) => CSSProperties = (color, mini, noMargin) => ({
+    color,
     fontWeight: WEIGHT,
     fontSize: mini ? 12 : 16,
     lineHeight: LINE_HEIGHT,
+    marginBottom: noMargin ? 0 : "16px",
+    fontStyle: "normal",
 });
+
+export const buttonTextStyles: CSSProperties = {
+    fontSize: 16,
+    fontWeight: TITLE_WEIGHT,
+    lineHeight: LINE_HEIGHT,
+};

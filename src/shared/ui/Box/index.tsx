@@ -4,18 +4,20 @@ import useColor from "@/shared/hooks/useColor";
 import { ColorsTypes } from "@/shared/types";
 
 interface BoxProps {
-    colorType: ColorsTypes;
+    colorType?: ColorsTypes;
 }
 
-const Box: FC<PropsWithChildren<BoxProps & HTMLDivElement>> = ({
-    children,
-    colorType,
-    ...props
-}) => {
+const Box: FC<
+    PropsWithChildren<BoxProps & React.HTMLAttributes<HTMLDivElement>>
+    // eslint-disable-next-line react/prop-types
+> = ({ children, colorType, style, ...props }) => {
     const color = useColor(colorType);
 
     return (
-        <div style={{ backgroundColor: color }} {...props}>
+        <div
+            style={{ backgroundColor: color || "transparent", ...style }}
+            {...props}
+        >
             {children}
         </div>
     );

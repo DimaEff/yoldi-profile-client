@@ -1,30 +1,11 @@
-import { Avatar } from "antd";
-
-import Box from "@/shared/ui/Box";
-import Button from "@/shared/ui/Button";
 import Paragraph from "@/shared/ui/Typography/Paragraph";
-import Input from "@/shared/ui/Input/Input";
+import AppContent from "@/widgets/Layout/Content";
 
 const Home = () => {
     return (
-        <Box colorType="bg_secondary">
-            <div>
-                <Button
-                    style={{ lineHeight: "160%", width: "100%" }}
-                    type="primary"
-                >
-                    123
-                </Button>
-            </div>
-            <Input />
-            {/* <Title>Title</Title> */}
-            {/* <Subtitle>Subtitle</Subtitle> */}
-            {/* <Paragraph>Paragraph</Paragraph> */}
+        <AppContent colorType="bg_secondary">
             <Paragraph mini>Mini</Paragraph>
-            {/* <div> */}
-            {/*     <Avatar>D</Avatar> */}
-            {/* </div> */}
-        </Box>
+        </AppContent>
     );
 };
 

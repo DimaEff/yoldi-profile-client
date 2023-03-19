@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "@/app/styles/index.scss";
 
 import { lightConfig } from "@/app/theme";
+import { Layout } from "@/widgets/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,9 @@ const App = ({ Component, pageProps }: AppProps) => {
     return (
         <main className={inter.className}>
             <ConfigProvider theme={lightConfig}>
-                <Component {...pageProps} />
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
             </ConfigProvider>
         </main>
     );

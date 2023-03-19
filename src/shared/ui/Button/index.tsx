@@ -1,20 +1,15 @@
 import React, { FC } from "react";
-import { Button as AButton, ButtonProps as AButtonProps, theme } from "antd";
+import { Button as AButton, ButtonProps as AButtonProps } from "antd";
 
 import { buttonStyles } from "@/shared/ui/Button/styles";
 
-interface ButtonProps {
-    disabled: AButtonProps["disabled"];
-    type: AButtonProps["type"];
-}
-
-const Button: FC<ButtonProps> = ({ children, type, disabled }) => {
-
+const Button: FC<AButtonProps> = ({ children, type, disabled, ...props }) => {
     return (
         <AButton
             type={type || "default"}
             style={buttonStyles}
             disabled={!!disabled}
+            {...props}
         >
             {children}
         </AButton>

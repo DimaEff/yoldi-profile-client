@@ -5,7 +5,12 @@ import { ColorByType, ColorsTypes } from "@/shared/types";
 
 const { useToken } = theme;
 
-const useColor = (colorType: ColorsTypes): string => {
+function useColor(colorType: undefined): null;
+// eslint-disable-next-line no-redeclare
+function useColor(colorType: ColorsTypes): string;
+
+// eslint-disable-next-line no-redeclare
+function useColor(colorType: unknown): unknown {
     const { token } = useToken();
 
     const colors = useMemo<ColorByType>(
@@ -33,7 +38,13 @@ const useColor = (colorType: ColorsTypes): string => {
         ]
     );
 
+    if (colorType === undefined) {
+        // eslint-disable-next-line no-console
+        console.log(`Color type is `);
+        return null;
+    }
+
     return colors[`${colorType}`];
-};
+}
 
 export default useColor;
