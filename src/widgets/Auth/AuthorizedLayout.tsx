@@ -6,7 +6,7 @@ import Header from "@/shared/Layout/Header";
 const AuthorizedLayout: FC<PropsWithChildren> = ({ children }) => {
     return (
         <>
-            <Header />
+            <Header rightSlot="123" />
             <Content colorType="bg_primary">{children}</Content>
         </>
     );
