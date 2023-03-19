@@ -1,3 +1,5 @@
+import variables from "@/app/styles/variables.scss";
+
 export default function Home() {
-    return <>Index</>;
+    return <div className={variables.test}>Index</div>;
 }
