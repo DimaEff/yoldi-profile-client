@@ -1,5 +1,3 @@
-import { CSSProperties } from "react";
-
 export interface Props<T = unknown> {
     props: T;
 }
@@ -17,5 +15,3 @@ export const colorsTypes = [
 ] as const;
 export type ColorsTypes = (typeof colorsTypes)[number];
 export type ColorByType = Record<ColorsTypes, string>;
-
-export type GetStyles<T extends object = unknown> = (args: T) => CSSProperties;
