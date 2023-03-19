@@ -44,7 +44,7 @@ function useColor(colorType: unknown): unknown {
         return null;
     }
 
-    return colors[`${colorType}`];
+    return colors[colorType];
 }
 
 export default useColor;
