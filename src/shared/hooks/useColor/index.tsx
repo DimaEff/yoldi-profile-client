@@ -38,7 +38,10 @@ function useColor(colorType: unknown): unknown {
         ]
     );
 
-    if (typeof colorType === "string" && colorsTypes.includes(colorType)) {
+    if (
+        typeof colorType === "string" &&
+        colorsTypes.includes(colorType as ColorsTypes)
+    ) {
         return colors[colorType as ColorsTypes]; // the checking above
     }
 
