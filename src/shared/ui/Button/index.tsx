@@ -18,7 +18,7 @@ const Button: FC<ButtonProps & AButtonProps> = ({
     return (
         <AButton
             type={type || "default"}
-            style={buttonStyles(size, !!fullWidth)}
+            style={buttonStyles(size || "middle", !!fullWidth)}
             disabled={!!disabled}
             {...props}
         >
