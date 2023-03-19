@@ -13,6 +13,7 @@ const useColor = (colorType: ColorsTypes): string => {
             primary: token.colorPrimary,
             txt_primary: token.colorText,
             txt_secondary: token.colorTextSecondary,
+            txt_light: token.colorTextLightSolid,
             bg_primary: token.colorBgContainer,
             bg_secondary: token.colorBgLayout,
             strokes_primary: token.colorBorder,
@@ -27,6 +28,7 @@ const useColor = (colorType: ColorsTypes): string => {
             token.colorError,
             token.colorPrimary,
             token.colorText,
+            token.colorTextLightSolid,
             token.colorTextSecondary,
         ]
     );

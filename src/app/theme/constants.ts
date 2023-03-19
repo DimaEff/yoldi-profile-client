@@ -5,7 +5,8 @@ export const COLORS_BY_THEMES: Record<Themes, ColorByType> = {
     light: {
         primary: "#000",
         txt_primary: "#000",
-        txt_secondary: "#838383",
+        txt_secondary: "#FFF",
+        txt_light: "#838383",
         bg_primary: "#FFF",
         bg_secondary: "#F3F3F3",
         strokes_primary: "#D5D5D5",
@@ -13,3 +14,7 @@ export const COLORS_BY_THEMES: Record<Themes, ColorByType> = {
         error: "#F00000",
     },
 } as const;
+
+export const DEFAULT_FONT_SIZE = 16;
+export const DEFAULT_LINE_HEIGHT = "160%";
+
