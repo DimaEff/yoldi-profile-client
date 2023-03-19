@@ -38,13 +38,14 @@ function useColor(colorType: unknown): unknown {
         ]
     );
 
-    if (!colorsTypes.includes(colorType.toString())) {
+    if (colorsTypes.includes(colorType.toString())) {
         // eslint-disable-next-line no-console
-        console.log(`Color type is ${colorType}`);
-        return null;
+        return colors[colorType];
     }
 
-    return colors[colorType];
+    console.log(`Color type is ${colorType}`);
+
+    return null;
 }
 
 export default useColor;
