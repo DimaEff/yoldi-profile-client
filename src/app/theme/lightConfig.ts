@@ -1,6 +1,6 @@
 import { ThemeConfig } from "antd";
 
-import { COLORS_BY_THEMES, DEFAULT_FONT_SIZE } from "./constants";
+import { COLORS_BY_THEMES } from "./constants";
 
 const { light } = COLORS_BY_THEMES;
 
@@ -17,15 +17,8 @@ const lightConfig: ThemeConfig = {
         colorBorder: light.strokes_primary,
         colorBorderSecondary: light.strokes_secondary,
         colorError: light.error,
-    },
-    components: {
-        Button: {
-            boxShadow: "none",
-            padding: 12,
-            controlHeight: 50,
-            controlOutlineWidth: 200,
-            fontWeightStrong: 500,
-        },
+        colorPrimaryBorderHover: light.txt_light,
+        colorSuccessBorderHover: light.txt_light,
     },
 };
 

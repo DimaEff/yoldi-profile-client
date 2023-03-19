@@ -3,8 +3,7 @@ import { Avatar } from "antd";
 import Box from "@/shared/ui/Box";
 import Button from "@/shared/ui/Button";
 import Paragraph from "@/shared/ui/Typography/Paragraph";
-import Subtitle from "@/shared/ui/Typography/Subtitle";
-import Title from "@/shared/ui/Typography/Title";
+import Input from "@/shared/ui/Input/Input";
 
 const Home = () => {
     return (
@@ -17,6 +16,7 @@ const Home = () => {
                     123
                 </Button>
             </div>
+            <Input />
             {/* <Title>Title</Title> */}
             {/* <Subtitle>Subtitle</Subtitle> */}
             {/* <Paragraph>Paragraph</Paragraph> */}

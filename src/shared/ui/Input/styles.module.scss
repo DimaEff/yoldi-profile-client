@@ -1,0 +1,15 @@
+.input {
+  height: 50px;
+  outline: none !important;
+  padding: 12px 20px;
+}
+
+.input:hover {
+  border: 1px solid #838383;
+}
+
+.input:focus {
+  border: 1px solid #838383;
+  outline: none !important;
+  box-shadow: none !important;
+}
