@@ -80,7 +80,9 @@ module.exports = {
     "prettier/prettier": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-    "import/no-unresolved": "error"
+    "import/no-unresolved": "error",
+    "import/no-extraneous-dependencies": "off",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
   },
 
   overrides: [
