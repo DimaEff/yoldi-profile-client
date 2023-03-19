@@ -1,10 +1,11 @@
 import React from "react";
+import { Card } from "antd";
 
 import { AuthLink } from "@/features/Auth";
 import { Footer, Header } from "@/shared/Layout";
-import Content from "@/shared/Layout/Content";
-import { RedirectButton } from "@/shared/ui/Link";
 import { SIGN_IN } from "@/shared/paths";
+import { RedirectButton } from "@/shared/ui/Link";
+import { GuestContent } from "@/widgets/Auth";
 
 const SignUp = () => {
     return (
@@ -12,9 +13,9 @@ const SignUp = () => {
             <Header
                 rightSlot={<RedirectButton to={SIGN_IN}>Войти</RedirectButton>}
             />
-            <Content colorType="bg_secondary">
-                <div>123123</div>
-            </Content>
+            <GuestContent>
+                <Card>123123</Card>
+            </GuestContent>
             <Footer>
                 <AuthLink
                     description="Уже есть аккаунт?"

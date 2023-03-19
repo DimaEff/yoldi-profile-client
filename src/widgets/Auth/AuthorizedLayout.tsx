@@ -3,7 +3,7 @@ import React, { FC, PropsWithChildren } from "react";
 import Content from "@/shared/Layout/Content";
 import Header from "@/shared/Layout/Header";
 
-const DefaultLayout: FC<PropsWithChildren> = ({ children }) => {
+const AuthorizedLayout: FC<PropsWithChildren> = ({ children }) => {
     return (
         <>
             <Header />
@@ -12,4 +12,4 @@ const DefaultLayout: FC<PropsWithChildren> = ({ children }) => {
     );
 };
 
-export default DefaultLayout;
+export default AuthorizedLayout;
