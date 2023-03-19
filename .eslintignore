@@ -1,0 +1,10 @@
+node_modules
+build
+dist
+.next
+
+.eslintrc.js
+.prettierrc.js
+
+next.config.js
+next-env.d.ts
