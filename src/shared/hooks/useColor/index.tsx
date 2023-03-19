@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { theme } from "antd";
 
-import { ColorByType, ColorsTypes } from "@/shared/types";
+import { ColorByType, colorsTypes, ColorsTypes } from "@/shared/types";
 
 const { useToken } = theme;
 
@@ -38,7 +38,7 @@ function useColor(colorType: unknown): unknown {
         ]
     );
 
-    if (colorType === undefined || colorType === null) {
+    if (!colorsTypes.includes(colorType.toString())) {
         // eslint-disable-next-line no-console
         console.log(`Color type is ${colorType}`);
         return null;
