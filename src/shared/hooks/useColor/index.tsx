@@ -38,9 +38,9 @@ function useColor(colorType: unknown): unknown {
         ]
     );
 
-    if (colorType === undefined) {
+    if (colorType === undefined || colorType === null) {
         // eslint-disable-next-line no-console
-        console.log(`Color type is `);
+        console.log(`Color type is ${colorType}`);
         return null;
     }
 
