@@ -1,5 +1,4 @@
 import React from "react";
-import { Space } from "antd";
 import Image from "next/image";
 
 import logo from "public/logo-wrapper.svg";

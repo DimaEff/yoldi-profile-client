@@ -84,6 +84,7 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
     "react/require-default-props": "off",
+    "security/detect-object-injection": "off",
   },
 
   overrides: [

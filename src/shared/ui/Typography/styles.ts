@@ -1,10 +1,10 @@
 import { CSSProperties } from "react";
 
 import {
-    TITLE_WEIGHT,
     LINE_HEIGHT,
-    WEIGHT,
     TITLE_LINE_HEIGHT,
+    TITLE_WEIGHT,
+    WEIGHT,
 } from "@/shared/styles";
 
 export const titleStyles: CSSProperties = {

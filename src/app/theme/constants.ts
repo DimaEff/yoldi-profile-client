@@ -17,4 +17,3 @@ export const COLORS_BY_THEMES: Record<Themes, ColorByType> = {
 
 export const DEFAULT_FONT_SIZE = 16;
 export const DEFAULT_LINE_HEIGHT = "160%";
-

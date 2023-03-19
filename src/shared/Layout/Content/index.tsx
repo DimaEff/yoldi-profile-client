@@ -2,11 +2,11 @@ import React, { FC, PropsWithChildren } from "react";
 import { Layout } from "antd";
 
 import useColor from "@/shared/hooks/useColor";
-import { ColorsTypes } from "@/shared/types";
 import {
     contentStyles,
     innerContainerStyles,
 } from "@/shared/Layout/Content/styles";
+import { ColorsTypes } from "@/shared/types";
 
 interface ContentProps {
     colorType: ColorsTypes;

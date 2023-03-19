@@ -1,5 +1,5 @@
-import Paragraph from "@/shared/ui/Typography/Paragraph";
 import Content from "@/shared/Layout/Content";
+import Paragraph from "@/shared/ui/Typography/Paragraph";
 
 const Home = () => {
     return (
