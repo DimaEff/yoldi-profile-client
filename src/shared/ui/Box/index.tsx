@@ -11,7 +11,9 @@ const Box: FC<
     PropsWithChildren<BoxProps & React.HTMLAttributes<HTMLDivElement>>
     // eslint-disable-next-line react/prop-types
 > = ({ children, colorType, style, ...props }) => {
-    const color = useColor(colorType);
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    // use color have an implementation for the colorType === undefined
+    const color = useColor(colorType!);
 
     return (
         <div

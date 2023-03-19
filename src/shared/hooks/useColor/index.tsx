@@ -5,12 +5,12 @@ import { ColorByType, ColorsTypes, colorsTypes } from "@/shared/types";
 
 const { useToken } = theme;
 
-function useColor(colorType: undefined): null;
-// eslint-disable-next-line no-redeclare
 function useColor(colorType: ColorsTypes): string;
+// eslint-disable-next-line no-redeclare
+function useColor(colorType: undefined): null;
 
 // eslint-disable-next-line no-redeclare
-function useColor(colorType: unknown): unknown {
+function useColor(colorType: ColorsTypes | undefined): string | null {
     const { token } = useToken();
 
     const colors = useMemo<ColorByType>(
@@ -39,7 +39,7 @@ function useColor(colorType: unknown): unknown {
     );
 
     if (
-        typeof colorType === "string" &&
+        colorType !== undefined &&
         colorsTypes.includes(colorType as ColorsTypes)
     ) {
         return colors[colorType as ColorsTypes]; // the checking above
