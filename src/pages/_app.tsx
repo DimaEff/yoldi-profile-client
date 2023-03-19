@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import "@/app/styles/index.scss";
 
 import { lightConfig } from "@/app/theme";
-import { Layout } from "@/widgets/Layout";
+import { Layout } from "@/shared/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 

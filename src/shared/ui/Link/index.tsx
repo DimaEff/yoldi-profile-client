@@ -1,18 +1,3 @@
-import React, { FC, PropsWithChildren } from "react";
-import NLink, { LinkProps as NLinkProps } from "next/link";
-
-import { buttonTextStyles } from "@/shared/ui/Typography";
-
-interface LinkProps {
-    href: NLinkProps["href"];
-}
-
-const Link: FC<PropsWithChildren<LinkProps>> = ({ children, href }) => {
-    return (
-        <NLink style={buttonTextStyles} href={href}>
-            {children}
-        </NLink>
-    );
-};
-
-export default Link;
+export { default as Link } from "./Link";
+export { default as RedirectButton } from "./RedirectButton";
+export { default as LinkWithDescription } from "./LinkWithDescription";

@@ -3,11 +3,22 @@ import { Button as AButton, ButtonProps as AButtonProps } from "antd";
 
 import { buttonStyles } from "@/shared/ui/Button/styles";
 
-const Button: FC<AButtonProps> = ({ children, type, disabled, ...props }) => {
+interface ButtonProps {
+    fullWidth?: boolean;
+}
+
+const Button: FC<ButtonProps & AButtonProps> = ({
+    children,
+    type,
+    size,
+    disabled,
+    fullWidth,
+    ...props
+}) => {
     return (
         <AButton
             type={type || "default"}
-            style={buttonStyles}
+            style={buttonStyles(size, !!fullWidth)}
             disabled={!!disabled}
             {...props}
         >

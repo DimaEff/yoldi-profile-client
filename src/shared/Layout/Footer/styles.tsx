@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 
-import { BORDER_STYLES } from "@/widgets/Layout/styles";
+import { BORDER_STYLES } from "@/shared/Layout/styles";
 
 export const footerStyles = (
     bgColor: string,
