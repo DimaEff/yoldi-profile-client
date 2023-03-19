@@ -3,10 +3,9 @@ import { SizeType } from "antd/es/config-provider/SizeContext";
 
 import { buttonTextStyles } from "@/shared/ui/Typography";
 
-const stylesByButtonType: Record<
-    Exclude<SizeType, undefined>,
-    CSSProperties
-> = {
+type ExistsSize = Exclude<SizeType, undefined>;
+
+const stylesByButtonType: Record<ExistsSize, CSSProperties> = {
     small: {
         height: "40px",
         padding: "7px 33px",
@@ -23,12 +22,12 @@ const stylesByButtonType: Record<
 };
 
 export const buttonStyles = (
-    size: SizeType,
+    size: ExistsSize,
     fullWidth: boolean
 ): CSSProperties => ({
     padding: 12,
     height: 50,
     width: fullWidth ? "100%" : "auto",
-    ...stylesByButtonType[`${size}`],
+    ...stylesByButtonType[size],
     ...buttonTextStyles,
 });
