@@ -3,7 +3,7 @@ import { SizeType } from "antd/es/config-provider/SizeContext";
 
 import { buttonTextStyles } from "@/shared/ui/Typography";
 
-const stylesByButtonType: Record<SizeType, CSSProperties> = {
+const stylesByButtonType: Record<NonNullable<SizeType>, CSSProperties> = {
     small: {
         height: "40px",
         padding: "7px 33px",
